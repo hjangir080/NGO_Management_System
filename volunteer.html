@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/volunteer.css">
+    <title>Volunteer with Us</title>
+</head>
+
+<body>
+    <header>
+        <img src="assets/logo.jpeg" alt="NGO Logo" class="logo">
+        <nav>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="initiatives.html">Initiatives</a></li>
+                <li class="nav-item"><a href="profiles.html">Profiles</a></li>
+                <li class="nav-item"><a href="login.html">Login</a></li>
+                <li class="nav-item"><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="volunteer-section">
+            <h1>Volunteer with Us</h1>
+            <p>Join us in making a difference! Select an initiative and provide your details to volunteer.</p>
+
+            <form action="submit_volunteer_form.php" method="POST" class="volunteer-form">
+                <!-- gpted this, edit later -->
+                <label for="initiative">Select Initiative:</label>
+                <select id="initiative" name="initiative" required>
+                    <option value="" disabled selected>Choose an initiative</option>
+                    <option value="agri_life">Agri Life: Sowing the Seeds of Change</option>
+                    <option value="empower_her">EmpowerHer: Building Futures Together</option>
+                    <option value="healthy_villages">Healthy Villages: Care at Your Doorstep</option>
+                    <option value="green_roots">Green Roots: Planting for Tomorrow</option>
+                    <option value="bright_horizons">Bright Horizons: Powering the Future</option>
+                </select>
+
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+
+                <label for="message">Why do you want to volunteer?</label>
+                <textarea id="message" name="message" rows="4" placeholder="Tell us why you're interested"></textarea>
+
+                <button type="submit" class="volunteer-button">Volunteer Now</button>
+            </form>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <h2>Contact Us</h2>
+        <address>
+            <p>Email: contact@ngo.org</p>
+            <p>Phone: +123 456 7890</p>
+            <p>Address: 123 NGO Street, City, Country</p>
+        </address>
+    </footer>
+</body>
+
+</html>

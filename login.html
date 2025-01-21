@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+    <title>Employee Login</title>
+</head>
+
+<body>
+    <header>
+        <img src="assets/logo.jpeg" alt="NGO Logo" class="logo">
+        <nav>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="initiatives.html">Initiatives</a></li>
+                <li class="nav-item"><a href="profiles.html">Profiles</a></li>
+                <li class="nav-item"><a href="login.html">Login</a></li>
+                <li class="nav-item"><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="login-section">
+            <div class="login-form">
+                <form action="dashboard.html" method="post">
+                    <label for="username">Employee ID or Email:</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your Employee ID or Email" required>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+                    <button type="submit" class="login-button">Login</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <h2>Contact Us</h2>
+        <address>
+            <p>Email: contact@ngo.org</p>
+            <p>Phone: +123 456 7890</p>
+            <p>Address: 123 NGO Street, City, Country</p>
+        </address>
+    </footer>
+</body>
+
+</html>
